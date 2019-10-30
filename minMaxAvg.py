@@ -10,12 +10,9 @@ while i < readLenghtList:
     number = int(input("Enter element: "))
     myList.append(number)
     i += 1
-
-
-
+    
 # function for min
 def min(list):
-
     min = list[0]
     i = 0
     # find the min compared to other numbers
@@ -41,8 +38,7 @@ def average(list):
     result = 0
     i = 0
     while i < len(list):
-        result += list[i] 
-        
+        result += list[i]   
         i += 1
     print("Average = ", result / len(list))
     
@@ -51,10 +47,3 @@ def average(list):
 min(myList)
 max(myList)
 average(myList)
-
-
-
-
-
-
-
