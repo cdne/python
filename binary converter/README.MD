@@ -17,7 +17,7 @@ User needs to enter number and number system.
 
 ### To Do
 
-~~1. App can convert lower decimal values~~
+1. App can convert lower decimal values
 2. Add function to try again if user did enter the numbers as instructed
  - Catch exceptions and let the user try again
 3. Do "Additional Features"
