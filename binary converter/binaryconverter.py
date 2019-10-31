@@ -1,9 +1,3 @@
-# TODO
-# 1. App can convert lower decimal values
-# 2. Add function to try again if user did enter the numbers as instructed
-# 3. Catch exceptions and let the user try again
-# 4. Do "Additional Features"
-
 
 # convert from binary
 def convert_from_binary(number):
@@ -33,6 +27,7 @@ first_number, second_number = input("Enter 2 numbers: ").split()
 
 # check if first number is binary
 def check_if_is_binary():
+    flag = False
     counter = 0
     for get_char in first_number:
         if get_char == '0' or get_char == '1':
@@ -43,16 +38,17 @@ def check_if_is_binary():
             else:
                 flag = False
     return flag
-            
-def make_conversion():
 
-    if check_if_is_binary() == True and second_number == '2':
+# converts from binary to decimal and decimal to binary           
+def make_conversion():
+    if check_if_is_binary() == True and second_number == '2' or check_if_is_binary() == False and second_number == '2':
         conversion = convert_from_binary(int(first_number))
         print("{0} {1}".format(conversion, 10))
-    elif check_if_is_binary() == False and second_number == '10':
+    elif check_if_is_binary() == False and second_number == '10' or check_if_is_binary() == True and second_number == '10':
         conversion = convert_from_decimal(int(first_number))
         print("{0} {1}".format(conversion, 2))
     else:
         print("You didn't enter as instructed")
 
 make_conversion()
+
