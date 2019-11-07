@@ -23,7 +23,7 @@ def show_anagrams(imported_list):
     for word in imported_list:
         for word2 in imported_list:
             if sorted(word[INDEX_0]) == sorted(word2[INDEX_0]):
-                print(f'{word[INDEX_0]} is an anagram of {word2[INDEX_0]}')
+                print(f'{word2[INDEX_0]} is an anagram of {word[INDEX_0]}')
 
 
 # running script
